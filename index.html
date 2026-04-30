@@ -56,7 +56,18 @@
             }
 
             .content {
+                display: flex;
+                flex-direction: column;
                 flex: 1;
+            }
+
+            .content h2,
+            .content p {
+                text-align: start;
+            }
+
+            .content button {
+                width: 220px;
             }
 
             .visual {
@@ -283,7 +294,8 @@
                     object-fit: cover;
                 }
             }
-            .section1{
+
+            .section1 {
                 margin-top: 100px;
                 display: flex;
                 align-items: center;
@@ -376,7 +388,6 @@
         </div>
     </div>
     <div class="container">
-
         <section class="section">
             <div class="visual">
                 <div class="circle-bg"></div>
@@ -400,11 +411,7 @@
     <div class="container">
 
         <section class="section">
-            <div class="visual">
-                <div class="circle-bg"></div>
-                <img src="https://www.thecumberland.com/wp-content/uploads/2025/09/Gordon-Ramsay-hells-kitchen.jpg"
-                    class="hero-img" alt="Fresh Salad">
-            </div>
+
             <div class="content">
                 <h2>Cooked by the <br> Best Chefs</h2>
                 <p>Believing neglected so so allowance existence departure in. In design active temper be uneasy. Thirty
@@ -414,7 +421,11 @@
                     <li>Food is guaranteed hygienic</li>
                     <li>Cooked quickly</li>
                 </ul>
-                <button class="btn">Explore More</button>
+            </div>
+            <div class="visual">
+                <div class="circle-bg"></div>
+                <img src="https://www.thecumberland.com/wp-content/uploads/2025/09/Gordon-Ramsay-hells-kitchen.jpg"
+                    class="hero-img" alt="Fresh Salad">
             </div>
         </section>
 
@@ -425,57 +436,60 @@
     </div>
 
 
+    <section class="dishes">
+        <div class="container">
+            <div class="dishes_block">
 
+                <h2>Special Dishes for you</h2>
+                <p class="subtitle">Made with premium & 100% Organic ingredients</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="https://olivkafood.ru/upload/thumbs/catalog_item_450x310/product_images/image/dscf1342_6555be96f0e29.jpg"
+                            alt="Green Salad">
+                        <h3>Green Salad</h3>
+                        <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
+                    </div>
+
+                    <div class="card active">
+                        <img src="https://media.ovkuse.ru/images/step_attachments/426e937e-7930-49b5-9b82-c46bb794b210/426e937e-7930-49b5-9b82-c46bb794b210.jpg"
+                            alt="Beef Salad">
+                        <h3>Beef Salad</h3>
+                        <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/1/30/1/GL1B03_Chinese-Chicken-Salad_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382542358133.webp"
+                            alt="Nut Salad">
+                        <h3>Nut Salad</h3>
+                        <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
+                    </div>
+
+                </div>
+
+                <button class="btn">View All</button>
+            </div>
+
+        </div>
+    </section>
 
 
     <div class="newsletter">
         <div class="container">
-            <h2>Subscribe to the Newsletter</h2>
-            <p>Enter your email below to get our daily offers and news</p>
-            <form class="subscribe-box" id="newsletterForm">
-                <input type="email" placeholder="Enter your email" required id="emailField">
-                <button type="submit" class="btn">Get Started</button>
-            </form>
+            <div class="form_item">
+                <h2>Subscribe to the Newsletter</h2>
+                <p>Enter your email below to get our daily offers and news</p>
+                <form class="subscribe-box" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required id="emailField">
+                    <button type="submit" class="btn">Get Started</button>
+                </form>
+            </div>
         </div>
     </div>
 
 
 
-    <section class="dishes">
-        <div class="container">
 
-            <h2>Special Dishes for you</h2>
-            <p class="subtitle">Made with premium & 100% Organic ingredients</p>
-
-            <div class="cards">
-
-                <div class="card">
-                    <img src="https://olivkafood.ru/upload/thumbs/catalog_item_450x310/product_images/image/dscf1342_6555be96f0e29.jpg"
-                        alt="Green Salad">
-                    <h3>Green Salad</h3>
-                    <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
-                </div>
-
-                <div class="card active">
-                    <img src="https://media.ovkuse.ru/images/step_attachments/426e937e-7930-49b5-9b82-c46bb794b210/426e937e-7930-49b5-9b82-c46bb794b210.jpg"
-                        alt="Beef Salad">
-                    <h3>Beef Salad</h3>
-                    <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
-                </div>
-
-                <div class="card">
-                    <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/1/30/1/GL1B03_Chinese-Chicken-Salad_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382542358133.webp"
-                        alt="Nut Salad">
-                    <h3>Nut Salad</h3>
-                    <p>A salad combined with delicious cut of bacon and mixed with tasty and fresh sesame oil.</p>
-                </div>
-
-            </div>
-
-            <button class="btn">View All</button>
-
-        </div>
-    </section>
 
 
 
